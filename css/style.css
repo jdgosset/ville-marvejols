@@ -1,0 +1,194 @@
+/* body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} */
+
+/* ------------début du header------------------------------------------- */
+.container-fluid{
+    
+    background-color: rgb(69, 69, 69);
+}
+.container{
+    width: auto;
+    height: 150px;
+    background-color: rgb(120, 120, 120);
+}
+
+.horaires  li{
+    display: block;
+    /* justify-content: center; */
+    color:#FFFFFF;
+    list-style-type: none;
+    text-align: center;
+}
+.adresse li{
+    display: block;
+    /* justify-content: center; */
+    color:#FFFFFF;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 4px;
+}
+.logo{
+    text-align: center;
+}
+
+/*--------------------------début de la nav--------------------------------  */
+
+
+
+.nav-row{
+    width: auto;
+    background-color: rgb(199, 199, 199);
+    margin-bottom: 8px;
+}
+.nav-row li{
+    width: auto;
+    padding-right: 1px;
+    padding-left: 1px;
+    text-align: center;
+}
+.nav-row ul li a {
+    color:white;
+}
+.nav-item0 a{
+    background-color: rgb(130, 130, 130);
+}
+.nav-item1 a{
+    background-color: #000F78;
+}
+.nav-item2 a{
+    background-color: #C1DA27;
+}
+.nav-item3 a{
+    background-color: #98C717;
+}
+.nav-item4 a{
+    background-color: #87004D;
+}
+
+
+#menu, #menu ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu ul li{
+display:inherit;
+border-radius:0;
+}
+#menu ul li:hover{
+border-radius:0;
+}
+#menu ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu li:hover ul{
+max-height:100em;
+}
+
+/* les a href */
+#menu a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu ul a{
+padding:8px 0;
+}
+#menu li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu li:hover a, #menu li li:hover a{
+color:#000;
+}
+.icon-bar{
+    background-color: white;
+
+}
+ button .navbar-toggler{
+    width: 5px;
+}
+.navbar-toggler-icon{
+    width: 30px;
+    background-color: black;
+}
+.navbar{
+    background-color: rgb(162, 162, 162);
+}
+
+
+
+form button {
+    width: 70px;
+    height: 30px;
+    background-color: grey;
+    color: black;
+
+}
+
+.carousel-item{
+
+    justify-content: center;
+    /* margin-bottom:8px; */
+}
+/*--------------------------fin de la nav--------------------------------  */
+
+/* ------------fin du header------------------------------------------- */
+
+
+
+
+.card{
+    display: inline-block;
+    flex-direction: column;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .logo{
+        text-align: center;
+        width: auto;
+    }
+    .horaires li{
+        display: none;
+    }
+    .adresse li{
+        display: none;
+    }
+    .card{
+            display: block;
+            flex-direction: column;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+
+    }
+}
