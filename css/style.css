@@ -6,7 +6,7 @@
 
 /* ------------début du header------------------------------------------- */
 .container-fluid{
-    
+
     background-color: rgb(69, 69, 69);
 }
 .container{
@@ -17,23 +17,32 @@
 
 .horaires  li{
     display: block;
-    /* justify-content: center; */
     color:#FFFFFF;
     list-style-type: none;
     text-align: center;
 }
+
+.logo{
+    text-align: center;
+}
 .adresse li{
     display: block;
-    /* justify-content: center; */
     color:#FFFFFF;
     list-style-type: none;
     text-align: center;
     padding-top: 4px;
 }
-.logo{
-    text-align: center;
-}
-
+.r-social li{
+     display: block;
+     font-size: 30px;
+     color:white;
+     list-style-type: none;
+     text-align: center;
+ }
+.r-social ul {
+     margin: 0;
+     padding: 0;
+ }
 /*--------------------------début de la nav--------------------------------  */
 
 
@@ -148,47 +157,150 @@ form button {
 
 }
 
-.carousel-item{
 
-    justify-content: center;
-    /* margin-bottom:8px; */
+.carousel-inner{
+    width: 100%;
 }
+.carousel-item{
+    width: 100%;
+}
+
 /*--------------------------fin de la nav--------------------------------  */
 
 /* ------------fin du header------------------------------------------- */
 
+/*-------------début du aside-------------------------------------------*/
+aside{
+    background-color: rgb(176, 176, 176);
+}
 
+h2 {
+    color:white;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.reseau-social{
+    width: auto;
+    background-color: #30323E;
+}
+.reseau-social h3{
+    color:#1C9FCB;
+    text-align: center;
+    font-size: 2rem;
+}
+.reseau-social h4{
+    color:white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.reseau-social h5{
+    color:#1C9FCB;
+    text-align: center;
+    font-size: 2rem;
+}
+.reseau-social ul {
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+.reseau-social li a .fab-fa-twitter{
+     background-color:#2ED1FA;
+     color:white;
+ }
+.reseau-social p {
+    color:white;
+    font-size: 1.9rem;
+    text-align: center;
+}
 
-.card{
-    display: inline-block;
-    flex-direction: column;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+/*-------------fin du aside-------------------------------------------*/
+
+.pratique > div {
+    display: flex;
+    justify-content: center;
+}
+
+.widget-bottom {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.widget-bottom a {
+    color:white;
+}
+
+.widget1{
+    background-color:#000F78;
+}
+.widget1 a {
+
+}
+
+.widget2{
+    background-color:#C1DA27;
+}
+.widget2 a {
+
+}
+
+.widget3{
+    background-color:#98C717;
+}
+.widget3 a {
+
+}
+
+.widget4{
+    background-color:#87004D;
+}
+.widget4 a {
+
 }
 
 
+
+
+
+
+
+
+
+
+/*--------------------------------début @média screen-------------------*/
 @media screen and (max-width: 992px){
 
     .logo{
         text-align: center;
         width: auto;
     }
-    .horaires li{
-        display: none;
-    }
-    .adresse li{
-        display: none;
-    }
     .card{
-            display: block;
-            flex-direction: column;
-            margin-right: 5px;
-            margin-left: 5px;
+
+            padding-left: 5px;
+            padding-right: 5px;
             margin-bottom: 5px;
             margin-top: 5px;
 
+    }
+    .r-social ul{
+        margin:0;
+        padding:0;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .r-social ul {
+        margin:0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
     }
 }

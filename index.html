@@ -21,7 +21,7 @@
     <div class="container-fluid">
                 <!-- <div class="container-fluid header"> -->
         <div class="row">
-            <div class="horaires col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="horaires d-none d-sm-block col-sm-4">
                 <ul>
                     <li>Heures d'Ouverture</li>
                     <li>LUNDI au JEUDI</li>
@@ -32,11 +32,11 @@
                 </ul>
             </div>
 
-            <div class="logo col xs-12 sm-12 md-4 lg-4">
-                   <img src="img/LogoVille-de-Marvejols-300x149.jpg" alt="logo-belle-du-gevaudan">
+            <div class="logo col-12 col-sm-4">
+                   <img class="img-fluid" src="img/LogoVille-de-Marvejols-300x149.jpg" alt="logo-belle-du-gevaudan">
             </div>
 
-            <div class="adresse col xs-12 sm-12 md-4 lg-4">
+            <div class="adresse d-none d-sm-block col-sm-3">
                 <ul>
                     <li>9, Avenue Savorgnan de Brazza</li>
                     <li>48100 MARVEJOLS</li>
@@ -44,7 +44,16 @@
                     <li>Standard : 04.66.32.00.45</li>
                     <li>Télécopie : 04.66.32.33.50</li>
                 </ul>
+
             </div>    <!-- </div> .adresse-->
+
+            <div class="r-social col-12 col-sm-1 ">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div> <!-- </div> .r-social -->
 
         </div>  <!-- </div> .row -->
 
@@ -131,29 +140,29 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="view">
-                            <img class="d-block w-100" src="img/eglise.jpeg" alt="Eglise">
+                            <img class="d-block w-100" src="img/Vue de marvejols.jpg" alt="vue-de-marvejols">
                             <div class="mask rgba-black-light"></div>
                         </div>
                         <div class="carousel-caption">
-                            <h3 class="h3-responsive">eglise</h3>
+                            <h3 class="h3-responsive">Vue de Marvejols</h3>
                             <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img class="d-block w-100" src="img/ville-vacances-juillet-aout-2013-marvejols-lozere-a75-touristique-ete-sport-visiter.jpg" alt="porte soubeyran">
+                            <img class="d-block w-100" src="img/2018-09-18_102205_20180918_082101-2.jpg" alt="porte chanelle">
                         <div class="mask rgba-black-strong"></div>
                         </div>
                         <div class="carousel-caption">
-                        <h3 class="h3-responsive">la porte du soubeyran</h3>
+                        <h3 class="h3-responsive"></h3>
                         <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img class="d-block w-100" src="img/marvejols-nuit-0610-113-768x512.jpg" alt="la mairie">
+                            <img class="d-block w-100" src="img/Marvejols-l-ancien-maire-de-la-commune-surendettee-s-est-suicide.jpg" alt="la mairie">
                             <div class="mask rgba-black-slight"></div>
                         </div>
                         <div class="carousel-caption">
@@ -177,48 +186,125 @@
 
         </div><!--/.row carousel wrapper-->
 
-        <div class="row">
-            <div class="col xs-12 sm-12 md-6 lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/SEMI-MARATHON.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Semi-Marathon Marvejols-Mende</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Lire Plus</a>
+        <div class="row content">
+            <main class=" col-12 col-md-9">
+                <div class="card-container row">
+                    <h2 class="col-12">Les dernières Actualités !! </h2>
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <img class="card-img-top" src="img/acdc_header-index-432.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">AC/DC EN CONCERT LIVE AT MARVEJOLS</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the     bulk of the card's content. </p>
+                                <a href="#" class="btn btn-primary">Lire Plus</a>
+                            </div>
                     </div>
-                </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/201603090983-full LOUP.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Les Loups du GEVAUDAN</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Lire Plus</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/acdc_header-index-432.jpg" alt="Card image cap">
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <img class="card-img-top" src="img/SEMI-MARATHON.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">AC/DC EN CONCERT LIVE AT MARVEJOLS</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                            <h5 class="card-title">Semi-Marathon Marvejols-Mende</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk     of the card's content.
+                            </p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Lire Plus</a>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <img class="card-img-top" src="img/201603090983-full LOUP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Les Loups du GEVAUDAN</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk     of the card's content.
+                            </p>
                             <a href="#" class="btn btn-primary">Lire Plus</a>
                         </div>
-                </div>
+                    </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/ANIMATIONS .jpeg" alt="Card image cap">
+
+
+                </div><!--/.row-->
+
+                <div class="card-container row">
+                    <h2 class="col-12">Les événements à ne pas manquer !! </h2>
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <img class="card-img-top" src="img/ANIMATIONS .jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">les Animations de Marvejols</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Lire Plus</a>
+                            </div>
+                    </div>
+
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <img class="card-img-top" src="img/SEMI-MARATHON.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">les Animations de Marvejols</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Semi-Marathon Marvejols-Mende</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk     of the card's content.
+                            </p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Lire Plus</a>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <img class="card-img-top" src="img/201603090983-full LOUP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Les Loups du GEVAUDAN</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk     of the card's content.
+                            </p>
                             <a href="#" class="btn btn-primary">Lire Plus</a>
                         </div>
-                </div>
+                    </div>
 
-            </div><!--/.col-->
-        </div><!--/.row-->
+                </div><!--/.row-->
+            </main> <!--/ main col-->
+
+            <aside class="col-12 col-md-3">
+                <div class="row">
+                    <div class="reseau-social">
+                        <h3>Rester connecté sur</h3>
+                        <h4>ville-marvejols.fr</h4>
+                        <h5>et rejoignez-nous sur</h5>
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                        <p>les infos, les actualités, les bons plans, les sorties, les photos et vidéos...</p>
+
+                    </div>
+                </div>
+            </aside>
+
+        </div> <!--/.row content-->
+
+            <!-- debut pratique-->
+        <div class="pratique row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="widget-bottom widget1">
+                    <h4><a href="#">Droits et démarches état civil</a></h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="widget-bottom widget2">
+                    <h4><a href="#">Annuaire</a></h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="widget-bottom widget3">
+                    <h4><a href="#">Calendriers et animations</a></h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="widget-bottom widget4">
+                    <h4><a href="#">Nous contacter</a></h4>
+                </div>
+            </div>
+
+        </div><!--/.pratique row-->
+
+        <footer>
+            
+
+
+        </footer>
 
 
 
@@ -229,7 +315,7 @@
 
 
 
-            
+
 
 
 
